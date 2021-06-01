@@ -23,23 +23,8 @@
 </head>
 
 <body>
-
-@include('layouts.header');
-
-<main>
-
-<section class="py-5 text-center">
-        <div class="container">
-            <h1 class="jumbotron-heading">Commandez  votre <br><span class="badge badge-light">nouveau</span> <br>T-Shirt <span class="badge badge-primary">préféré </span>!</h1>
-            <p class="lead text-muted">Dénichez THE T-Shirt de votre série, films préféré(e).</p>
-
-        </div>
-    </section>
-
- @yield('content')
-
-</main>
-
+@include('layouts.header')
+@yield('content')
 <footer class="text-muted py-5">
 <div class="container">
         <p class="float-right">
@@ -48,10 +33,6 @@
         <p>Mon T-Shirt</p>
     </div>
 </footer>
-
-
     <script src="{{asset('js/bootstrap.bundle.min.js')}}" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
-      
   </body>
 </html>

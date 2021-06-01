@@ -13,4 +13,9 @@ class MainController extends Controller
         // dd($produit);
         return view('shop/index',compact('produits'));
     }
+
+    public function produit(){
+        
+        return view('shop/produit');
+    }
 }
