@@ -10,7 +10,8 @@
 
 
             <div class="card-body">
-              <p class="card-text">{{$produit->nom}} <br> {{$produit->description}}</p>
+              <p class="card-text">{{$produit->nom}} <br> {{$produit->description}}<br>
+             <span class="badge badge-info"> {{$produit->category->nom}}</span></p>
               <div class="d-flex justify-content-between align-items-center">
                                 <span class="price">{{number_format($produit->prix_ht,2)}} €</span>
                                 <a href="produit/{{$produit->id}}" class="btn btn-sm btn-outline-secondary"><i class="fas fa-eye"></i></a>
