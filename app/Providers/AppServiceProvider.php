@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Providers;
+use App\Http\ViewComposers\HeaderComposer;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -24,5 +25,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        View()->composer(['shop','home'], HeaderComposer::class);
+        
     }
 }

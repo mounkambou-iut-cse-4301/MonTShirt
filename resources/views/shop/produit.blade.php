@@ -17,15 +17,15 @@
 
                 <div class="col-6">
                     <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="produits/goonies.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="{{asset('produits/'.$produit->photo_principale)}}" alt="Card image cap">
 
                     </div>
                 </div>
                 <div class="col-6">
 
-                    <h1 class="jumbotron-heading">T-Shirt Goonies</h1>
-                    <h5>29.00 €</h5>
-                    <p class="lead text-muted">Cinoque aime choco! consectetur adipisicing elit. Dignissimos dolore eaque earum eos ex, exercitationem facilis magni maiores maxime natus neque odit quo quod recusandae tempora unde ut veritatis vero!</p>
+            <h1 class="jumbotron-heading">{{$produit->nom}}</h1>
+                    <h5>{{$produit->prix_ht}} €</h5>
+                    <p class="lead text-muted">{{$produit->description}}</p>
                     <hr>
                     <label for="size">Choisissez votre taille</label>
                     <select name="size" id="size" class="form-control">
