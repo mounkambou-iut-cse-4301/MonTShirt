@@ -20,4 +20,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', "App\Http\Controllers\Shop\MainController@index");
 Route::get('/produit/{id}', "App\Http\Controllers\Shop\MainController@produit");
-Route::get('/categorie', "App\Http\Controllers\Shop\MainController@viewByCategory");
+Route::get('/categorie/{id}', "App\Http\Controllers\Shop\MainController@viewByCategory")->name('voir_produits_par_cat');

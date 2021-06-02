@@ -19,6 +19,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht=25;
         $produit->description="T-Shirt du film les Gonnies";
         $produit->photo_principale="goonies.jpg";
+        $produit->category_id=1;
         $produit->save();
 
         $produit=new \App\Models\Produit();
@@ -26,6 +27,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht=28;
         $produit->description="T-Shirt du film les happy";
         $produit->photo_principale="happy.jpg";
+        $produit->category_id=3;
         $produit->save();
 
         $produit=new \App\Models\Produit();
@@ -33,6 +35,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht=24;
         $produit->description="T-Shirt du film les hulk";
         $produit->photo_principale="hulk.jpg";
+        $produit->category_id=1;
         $produit->save();
 
         $produit=new \App\Models\Produit();
@@ -40,6 +43,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht=95;
         $produit->description="T-Shirt du film les krusty_simpson";
         $produit->photo_principale="krusty_simpson.jpg";
+        $produit->category_id=2;
         $produit->save();
 
         $produit=new \App\Models\Produit();
@@ -47,6 +51,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht=25;
         $produit->description="T-Shirt du film les simpson";
         $produit->photo_principale="simpson.jpg";
+        $produit->category_id=2;
         $produit->save();
 
         $produit=new \App\Models\Produit();
@@ -54,6 +59,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht=65;
         $produit->description="T-Shirt du film les Star_Trek";
         $produit->photo_principale="Star_Trek.jpg";
+        $produit->category_id=1;
         $produit->save();
 
         $produit=new \App\Models\Produit();
@@ -61,6 +67,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht=5;
         $produit->description="T-Shirt du film les sunshine";
         $produit->photo_principale="sunshine.jpg";
+        $produit->category_id=2;
         $produit->save();
 
         $produit=new \App\Models\Produit();
@@ -68,6 +75,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht=15;
         $produit->description="T-Shirt du film les superman";
         $produit->photo_principale="superman.jpg";
+        $produit->category_id=1;
         $produit->save();
 
         $produit=new \App\Models\Produit();
@@ -75,6 +83,7 @@ class ProduitsTableSeeder extends Seeder
         $produit->prix_ht=45;
         $produit->description="T-Shirt du film les wonder_woman";
         $produit->photo_principale="wonder_woman.jpg";
+        $produit->category_id=1;
         $produit->save();
     }
 }

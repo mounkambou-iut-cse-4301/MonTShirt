@@ -20,8 +20,9 @@ class MainController extends Controller
         return view('shop/produit',compact('produit'));
     }
 
-    public function viewByCategory(){
+    public function viewByCategory( Request $request){
+        $produits= Produit::where('category_id',$request->id)->get();
      
-        return view('shop.categorie');
+        return view('shop.categorie',compact('produits'));
     }
 }
